@@ -420,8 +420,9 @@ cite img{
     background-color: #fff;
     border-radius: 10px;
     width: 100%;
-    
-    
+    margin-left: 5%;
+    box-shadow: 5px 5px 2px #e3e3e3;
+
     
 }
 
@@ -430,7 +431,17 @@ cite img{
     padding: 15px;
     border-bottom: 1px solid #e8e8e8;
     
-    
+}
+
+.plan-box div:first-child{
+    background-color: #fcfcfc;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.plan-box div:last-child{
+    text-align: center;
+    border: 0;
 }
 
 .plan-box ul {
@@ -445,7 +456,7 @@ cite img{
 .plan-price {
     font-size: 200%;
     font-weight: 100;
-    text-align: center;
+    
     margin-bottom: 10px;
     color: #e67e22;
 }

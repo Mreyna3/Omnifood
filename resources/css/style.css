@@ -12,6 +12,9 @@ Orange color: #e67e22
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    color: inherit;
+
 }
 
 html,
@@ -158,17 +161,20 @@ a:active{
 }
 /* ----- BUTTONS ----- */
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type=submit] {
     display: inline-block;
     padding: 10px 30px;
     font-weight: 300;
     text-decoration: none;
     border-radius: 200px;
     transition: background-color 0.2s, border 0.2s, color 0.2s;
+     /*Transitions the hover affect, speed of background transition, transition of border, transition of color  */
 }
 
 .btn-full:link,
-.btn-full:visited {
+.btn-full:visited,
+input[type=submit] {
     background-color: #e67e22;
     border: 1px solid #e67e22;
     color: #fff;
@@ -182,7 +188,9 @@ a:active{
 }
 
 .btn:hover,
-.btn:active {
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
     background-color: #cf6d17;
 }
 
@@ -194,7 +202,7 @@ a:active{
 .btn-ghost:hover,
 .btn-ghost:active {
     border: 1px solid #cf6d17;
-    color: #fff;
+    color: #fff; /* This is the color of the font*/
 }
 
 
@@ -428,7 +436,7 @@ cite img{
 
 
 .plan-box div {
-    padding: 15px;
+    padding: 40px;
     border-bottom: 1px solid #e8e8e8;
     
 }
@@ -437,6 +445,8 @@ cite img{
     background-color: #fcfcfc;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    text-align: center;
+    font-size: 110%;
 }
 
 .plan-box div:last-child{
@@ -455,7 +465,7 @@ cite img{
 
 .plan-price {
     font-size: 200%;
-    font-weight: 100;
+    font-weight: 300;
     
     margin-bottom: 10px;
     color: #e67e22;
@@ -471,7 +481,42 @@ cite img{
     text-align: center;
 
 }
+#starter-label{
+    margin-top: 8%;
+    font-size: 300%;
+}
 
+/* ----------------------------------------------- */
+/* Section Form */
+/* ----------------------------------------------- */
+
+.contact-form {
+   /*  background-color: #f4f4f4;*/
+    width: 60%;
+    margin:0 auto;
+    border-radius: 10px;
+}
+/*we needed to add the "type=text/email", because we didnt want every element witht the following properties */
+input[type=text],
+input[type=email],
+select,
+textarea{
+    
+    width: 100%;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc; /* border width, border type, border color*/
+}
+
+textarea{
+    height: 100px;
+}
+
+input[type=checkbox]{
+    margin: 10px 5px 10px 0;
+}
+
+*:focus {outline: none;} /*This is used to get rid of annoying ouline when we click on form elements, in the future look to add specifically to form elements  */
 
 /* ----------------------------------------------- */
 /* FEATURES */

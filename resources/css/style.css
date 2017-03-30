@@ -490,6 +490,11 @@ cite img{
 /* Section Form */
 /* ----------------------------------------------- */
 
+.section-form{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/Background-Food.jpg);
+    color: #ddd
+}
+
 .contact-form {
    /*  background-color: #f4f4f4;*/
     width: 60%;
